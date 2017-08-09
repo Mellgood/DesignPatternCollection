@@ -14,17 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package decoratorpattern;
+package decorator;
 
 /**
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class Espresso extends Beverage{
-
-    @Override
-    public int cost() {
-        return 2;
-    }
+public abstract class Beverage {
     
+    public abstract int cost();
 }

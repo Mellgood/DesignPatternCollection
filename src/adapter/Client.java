@@ -14,32 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package decoratorpattern;
-
+package adapter;
 
 /**
- * Beverage è l'interfaccia ad alto livello che userò nel main.
- * Espresso è una Beverage esattamente come AddonDecorator ma Espresso è una
- * classe concreta mentre AddonDecorator è un altra astrazione.
- * Milk è un AddonDecorator e quindi ha una Beverage ed è un AddonDecorator (quindi
- * è anche una Beverage).
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class DecoratorPattern {
+public class Client {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //verifico il costo di un caffè (2)
-        Beverage caffè= new Espresso();
-        System.out.println("Costo di Espresso: " + caffè.cost());
+        //this declaration may be done in another place and by another pattern..
+        ITarget target= new Adapter(new Adaptee());
         
-        //verifico se nel caffè con latte viene applicata la maggiorazione di 1
-        Beverage caffèConLatte= new Milk(caffè);
-        System.out.println("Costo di Espresso con decoratore latte: " + caffèConLatte.cost());
-        
+        //now we have a target which implements ITarget interface and we can call
+        // the "request()" method on it. note that the client has no idea about
+        // what is the name of the real method invoked on Adaptee class.
+        target.request();
     }
     
 }
