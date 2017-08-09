@@ -5,3 +5,4 @@ Ogni cartella costituisce un package a se stante ed è fornito di un file princi
 ## Design pattern presenti:
 * Strategy
 * Decorator
+* Adapter
