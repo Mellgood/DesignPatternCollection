@@ -17,6 +17,9 @@
 package facade;
 
 /**
+ * Facade allows the client to use a simplified interface to perform actions.
+ * The client has just to invoke one of the implemented methods here and
+ * the Facade does the "dirty work"
  *
  * @author Carlo <carlocentos@gmail.com>
  */
