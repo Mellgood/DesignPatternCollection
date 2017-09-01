@@ -26,7 +26,7 @@ package decorator;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class DecoratorPattern {
+public class Client {
 
     /**
      * @param args the command line arguments
