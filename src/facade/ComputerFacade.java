@@ -24,11 +24,13 @@ package facade;
  * @author Carlo <carlocentos@gmail.com>
  */
 public class ComputerFacade {
+    //initializing all the specialized classes (NOTE: THEY ARE PRIVATE!!!)
     private CentralProcessingUnit processor;
     private Memory ram;
     private HardDrive hd;
     
-    //Setting some parameters (in real life i know exactly those values)
+    //Setting some parameters (in real life i know exactly those values and are
+    // maybe defined elsewhere)
     long BOOT_ADDRESS = 12;
     long BOOT_SECTOR =3;
     int SECTOR_SIZE = 4;
@@ -40,6 +42,7 @@ public class ComputerFacade {
     }
     
     /**
+     * Start is the power on scheduled job to turn on the pc
      * At pc power on, i have to boot... so i freeze the processor, load the os
      * then set the processor's next instruction to the BOOT_ADDRESS and at the
      * end i can execute
