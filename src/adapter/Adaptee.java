@@ -28,7 +28,7 @@ public class Adaptee {
     void SpecificRequest() {
         //here there is some implementation with specific logic, outside the 
         //pattern
-        System.out.println("adapter.Adaptee.SpecificRequest() has been called!");
+        System.out.println("Adaptee.SpecificRequest() has been called!");
     }
     
 }

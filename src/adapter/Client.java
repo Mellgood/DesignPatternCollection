@@ -23,6 +23,15 @@ package adapter;
 public class Client {
 
     /**
+     * The Client wants to call request method on Adaptee class wich hasn't got 
+     * that method.
+     * The Client knows that there is an Adapter who knows how to adapt the
+     * request to whatever should be called on Adaptee.
+     * The Client can use ITarget interface of Adapter to use the Adaptee's unknown
+     * method.
+     * The Client instantiate an Adapter passing an Adaptee to it. The Adapter
+     * has the responsability to adapt and perform the request on the Adaptee object
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
