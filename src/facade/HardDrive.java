@@ -17,6 +17,7 @@
 package facade;
 
 /**
+ * Specialized class HardDrive, it represent the hard drive
  *
  * @author Carlo <carlocentos@gmail.com>
  */

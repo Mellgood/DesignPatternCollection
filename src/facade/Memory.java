@@ -17,6 +17,7 @@
 package facade;
 
 /**
+ * Specialized class Memory, it represent the Memory
  *
  * @author Carlo <carlocentos@gmail.com>
  */

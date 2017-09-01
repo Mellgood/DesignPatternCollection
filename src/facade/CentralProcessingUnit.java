@@ -17,6 +17,7 @@
 package facade;
 
 /**
+ * Specialized class CPU, it represent the CPU
  *
  * @author Carlo <carlocentos@gmail.com>
  */
