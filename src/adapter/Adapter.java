@@ -22,17 +22,17 @@ package adapter;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class Adapter implements ITarget {
+public class Adapter implements ITargetAdapter {
 
-    private final Adaptee adaptee;
+    private final Target adaptee;
     
-    public Adapter(Adaptee a) {
+    public Adapter(Target a) {
         this.adaptee= a;
     }
 
     @Override
     public void request() {
-        // here i have to invoke the real method i need in the client
+        // in order to perform the call i need to call the right method SpecificRequest()
         this.adaptee.SpecificRequest();
 
     }

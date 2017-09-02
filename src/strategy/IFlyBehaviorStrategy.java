@@ -20,6 +20,7 @@ package strategy;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public interface IQuackBehavior {
-    void quack();
+public interface IFlyBehaviorStrategy {
+    public void fly();
+    
 }

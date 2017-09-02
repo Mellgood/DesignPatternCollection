@@ -21,11 +21,11 @@ package strategy;
  * @author Carlo <carlocentos@gmail.com>
  */
 public class Duck {
-    IFlyBehavior flyBehavior;
-    IQuackBehavior quackBehavior;
-    IDisplayBehavior displayBehavior;
+    IFlyBehaviorStrategy flyBehavior;
+    IQuackBehaviorStrategy quackBehavior;
+    IDisplayBehaviorStrategy displayBehavior;
     
-    public Duck(IFlyBehavior fb, IQuackBehavior qb, IDisplayBehavior db){
+    public Duck(IFlyBehaviorStrategy fb, IQuackBehaviorStrategy qb, IDisplayBehaviorStrategy db){
         this.flyBehavior= fb;
         this.quackBehavior= qb;
         this.displayBehavior= db;

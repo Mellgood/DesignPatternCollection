@@ -20,7 +20,7 @@ package strategy;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class OrangeDuckDisplayBehavior implements IDisplayBehavior{
+public class OrangeDuckDisplayBehavior implements IDisplayBehaviorStrategy{
 
     @Override
     public void display() {

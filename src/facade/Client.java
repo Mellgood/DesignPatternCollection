@@ -25,9 +25,12 @@ public class Client {
     /**
      * The client doesn't know anything about specialized classes (Memory, 
      * HardDrive, CentralProcessingUnit) and he is allowed to call just the
-     * facade methods. In this case i have only the start() method so i just
-     * invoke it.
+     * facade's methods. In this case ComputerFacade has got only the start() 
+     * method so it just invokes it.
      * The facade has the responsability to perform the requested hi-level task
+     * and will demand to specialized classes the responsability to answer the
+     * call.
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {

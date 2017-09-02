@@ -20,7 +20,7 @@ package strategy;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class EuropeanQuackBehavior implements IQuackBehavior{
+public class EuropeanQuackBehavior implements IQuackBehaviorStrategy{
 
     @Override
     public void quack() {

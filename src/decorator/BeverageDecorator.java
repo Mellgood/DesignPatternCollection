@@ -14,21 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package adapter;
+package decorator;
 
 /**
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class Adaptee {
-
-    public Adaptee() {
-    }
-
-    void SpecificRequest() {
-        //here there is some implementation with specific logic, outside the 
-        //pattern
-        System.out.println("Adaptee.SpecificRequest() has been called!");
-    }
+public abstract class BeverageDecorator extends Beverage{
+    @Override
+    public abstract int cost();
     
 }

@@ -14,12 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package strategy;
+package adapter;
 
 /**
+ * This interface guarantee the contract (i need "request" method)
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public interface IDisplayBehavior {
-    void display();
+interface ITargetAdapter {
+    void request();
+    
 }

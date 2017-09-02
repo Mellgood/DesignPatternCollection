@@ -23,24 +23,24 @@ package adapter;
 public class Client {
 
     /**
-     * The Client wants to call request method on Adaptee class wich hasn't got 
-     * that method.
-     * The Client knows that there is an Adapter who knows how to adapt the
-     * request to whatever should be called on Adaptee.
-     * The Client can use ITarget interface of Adapter to use the Adaptee's unknown
-     * method.
-     * The Client instantiate an Adapter passing an Adaptee to it. The Adapter
-     * has the responsability to adapt and perform the request on the Adaptee object
+     * The Client wants to call request method on Target class wich hasn't got 
+ that method.
+     * The Client knows that there is an Adapter that knows how to adapt the
+ request to whatever should be called on Target.
+ The Client can use ITargetAdapter interface of Adapter to use the Target's unknown
+ method.
+ The Client instantiate an Adapter passing an Target to it. The Adapter
+ has the responsability to adapt and perform the request on the Target object
      * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         //this declaration may be done in another place and by another pattern..
-        ITarget target= new Adapter(new Adaptee());
+        ITargetAdapter target= new Adapter(new Target());
         
-        //now we have a target which implements ITarget interface and we can call
+        //now we have a target which implements ITargetAdapter interface and we can call
         // the "request()" method on it. note that the client has no idea about
-        // what is the name of the real method invoked on Adaptee class.
+        // what is the name of the real method invoked on Target class.
         target.request();
     }
     

@@ -20,7 +20,7 @@ package strategy;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class NormalFlyBehavior implements IFlyBehavior{
+public class NormalFlyBehavior implements IFlyBehaviorStrategy{
 
     @Override
     public void fly() {

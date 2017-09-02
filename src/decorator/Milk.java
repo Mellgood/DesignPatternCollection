@@ -20,8 +20,8 @@ package decorator;
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public class Milk extends AddonDecorator{
-    Beverage beverage; //il decorator ha una Beverage
+public class Milk extends BeverageDecorator{
+    Beverage beverage; //AddonDecorator has a Beverage
     int myCost= 1;
     
     public Milk(Beverage b){

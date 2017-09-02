@@ -18,11 +18,10 @@ package decorator;
 
 
 /**
- * Beverage è l'interfaccia ad alto livello che userò nel main.
- * Espresso è una Beverage esattamente come AddonDecorator ma Espresso è una
- * classe concreta mentre AddonDecorator è un altra astrazione.
- * Milk è un AddonDecorator e quindi ha una Beverage ed è un AddonDecorator (quindi
- * è anche una Beverage).
+ * The Client just knows Beverage class and it's methods.
+ * When i add a decorator to the Beverage class, it will be a Beverage too for
+ * the Client point of view. I can add as decorator as i want to the Beverage
+ * object and it will still remain a Beverage object usable for the Client.
  *
  * @author Carlo <carlocentos@gmail.com>
  */
@@ -32,13 +31,15 @@ public class Client {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //verifico il costo di un caffè (2)
-        Beverage caffè= new Espresso();
-        System.out.println("Costo di Espresso: " + caffè.cost());
+        //this initialization can be moved to a creational pattern
+        Beverage beverage1= new Espresso();
+        Beverage beverage2= new Milk(beverage1); //adding some milk..
         
-        //verifico se nel caffè con latte viene applicata la maggiorazione di 1
-        Beverage caffèConLatte= new Milk(caffè);
-        System.out.println("Costo di Espresso con decoratore latte: " + caffèConLatte.cost());
+        //checking beverage1 price (expected: 2)
+        System.out.println("Costo di Espresso: " + beverage1.cost());
+        
+        //checking beverage2 price (expected 2 + 1)
+        System.out.println("Costo di Espresso con decoratore latte: " + beverage2.cost());
         
     }
     

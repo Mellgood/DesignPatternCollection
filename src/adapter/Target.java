@@ -14,13 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package strategy;
+package adapter;
 
 /**
  *
  * @author Carlo <carlocentos@gmail.com>
  */
-public interface IFlyBehavior {
-    public void fly();
+public class Target {
+
+    public Target() {
+    }
+
+    void SpecificRequest() {
+        //here there is some implementation with specific logic, outside the 
+        //pattern
+        System.out.println("Adaptee.SpecificRequest() has been called!");
+    }
     
 }
