@@ -9,3 +9,6 @@ Se necessario, anche il client stampa indicazioni su cosa sta per fare
 * Decorator
 * Adapter
 * Facade
+* Observer
+* Factory
+* AbstractFactory
