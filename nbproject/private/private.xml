@@ -3,23 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/factory/Shape.java</file>
             <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/Client.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/factory/Client.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/README.md</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/factory/Rectangle.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/GreenColor.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/factory/Square.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/RedColor.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/Color.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/AbstractFactory.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/SquareShape.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/FactoryProducer.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/BlueColor.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/ShapeFactory.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/factory/Circle.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/ColorFactory.java</file>
-            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactory/Shape.java</file>
+            <file>file:/C:/Users/cdaga/Documents/NetBeansProjects/PatternCollection/src/abstractFactoryGOF/Client.java</file>
         </group>
     </open-files>
 </project-private>
