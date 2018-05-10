@@ -14,7 +14,7 @@ If needed to understand the workflow, even the client can print some hint about 
 * AbstractFactory
 
 ## Many thanks to:
-Many thanks to [You can use numbers for reference-style link definitions][1], it has been a light in the darkness of my approach to gof Design Pattern study. 
+Many thanks to ["Head First: Design Patterns"][1], it has been a light in the darkness of my approach to gof Design Pattern study. 
 
 
 
